@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	<title>Tetris 1.0</title>
+	<link rel ="stylesheet" href = styles.css>
+</head>
+<body>
+<div class="wrapped">
+<div class = "tetris">
+	<div class = "gameSpaceWrapper">
+		<div class = "gameSpace">
+			<div class="figurePart wbpart1 displayNone"></div>
+			<div class="figurePart wbpart2 displayNone"></div>
+			<div class="figurePart wbpart3 displayNone"></div>
+			<div class="figurePart wbpart4 displayNone"></div>
+			<div class = "field">
+			</div>
+			<div class ="menu">
+				<p class="btn SP">Start</p>
+				<p class="NG"><a class="btn" href="tetris-main.html">New Game</a></p>
+				<p class="btn LG">Load Game</p>
+				<p class="btn SG">Save Game</p>
+				<p class="btn FS">Speed</P>
+				<p class="btn EG">Exit Game</p>
+			</div>
+			<div class="message1 displayNone">
+				<p class="tabloText pos">Congratulations!</p>
+				<p class="tabloText pos">You win!</p>
+				<p class="tabloText pos">Continue?</p>
+				<div  class="pos">
+					<p class="tabloText WY">YES</p>
+					<a class="tabloText WN" href="tetris-main.html">NO</a>
+				</div>
+			</div>
+			<div class="message2 displayNone">
+				<p class="tabloText pos">Game Over!</p>
+				<p class="tabloText pos PA">Play again?</p>
+				<a class="tabloText WN" href="tetris-main.html">GO!</a>
+			</div>
+			
+			</div>
+		<div class = "tablo">
+			<div>
+				<p class = "tabloText">Score:</p> 
+				<p class = "scoreCounter tabloText">0</p>
+			</div>
+			<div>
+				<p class = "tabloText">Line:</p> 
+				<p class = "lineCounter tabloText">0</p>
+			</div>
+			<div class = "figureDeque">
+				<div class = "nextFigureP1 figurePart"></div>
+				<div class = "nextFigureP2 figurePart"></div>
+				<div class = "nextFigureP3 figurePart"></div>
+				<div class = "nextFigureP4 figurePart"></div>
+			</div>
+			<div>
+				<p class="levelInfo tabloText ">Level: 1</p>
+				<p class="created creatorText">Created by</p>
+				<p class="creatorText">Lenshmidt A.</p>
+			</div>
+		</div>
+		</div>
+		<div class="screenKeybord">
+			<button class="button turnLeft">
+			</button>
+			<button class="button turnRight"></button>
+			<button class="button start-pause">
+				<p class="creatorText">START</p>
+				<p class="creatorText">PAUSE</p>
+			</button>
+			<button class="button ArrowLeft"></button>
+			<button class="button ArrowTop"></button>
+			<button class="button ArrowBottom"></button>
+			<button class="button ArrowRight"></button>
+		</div>
+	</div>
+	<div class = "allFigures">
+		<div class = figureWrapper>
+			<div class = "figures line">
+				<div class = "linePart1 figurePart"></div>
+				<div class = "linePart2 figurePart"></div>
+				<div class = "linePart3 figurePart"></div>
+				<div class = "linePart4 figurePart"></div>
+			</div>
+		</div>
+		<div class = figureWrapper>
+			<div class = "figures squere">
+				<div class = "squerePart1 figurePart"></div>
+				<div class = "squerePart2 figurePart"></div>
+				<div class = "squerePart3 figurePart"></div>
+				<div class = "squerePart4 figurePart"></div>
+			</div>
+		</div>
+		<div class = figureWrapper>
+			<div class = "figures leftS">
+				<div class = "leftSPart1 figurePart"></div>
+				<div class = "leftSPart2 figurePart"></div>
+				<div class = "leftSPart3 figurePart"></div>
+				<div class = "leftSPart4 figurePart"></div>
+			</div>
+		</div>
+		<div class = figureWrapper>
+			<div class = "figures rightS">
+				<div class = "rightSPart1 figurePart"></div>
+				<div class = "rightSPart2 figurePart"></div>
+				<div class = "rightSPart3 figurePart"></div>
+				<div class = "rightSPart4 figurePart"></div>
+			</div>
+		</div>
+		<div class = figureWrapper>
+			<div class = "figures leftCorner">
+				<div class = "leftCorner1 figurePart"></div>
+				<div class = "leftCorner2 figurePart"></div>
+				<div class = "leftCorner3 figurePart"></div>
+				<div class = "leftCorner4 figurePart"></div>
+			</div>
+		</div>
+		<div class = figureWrapper>
+			<div class = "figures rightCorner">
+				<div class = "rightCorner1 figurePart"></div>
+				<div class = "rightCorner2 figurePart"></div>
+				<div class = "rightCorner3 figurePart"></div>
+				<div class = "rightCorner4 figurePart"></div>
+			</div>
+		</div>
+		<div class = figureWrapper>
+			<div class = "figures figureT">
+				<div class = "figureT1 figurePart"></div>
+				<div class = "figureT2 figurePart"></div>
+				<div class = "figureT3 figurePart"></div>
+				<div class = "figureT4 figurePart"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
